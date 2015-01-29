@@ -13,10 +13,19 @@ in:
   access_token:        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   access_token_secret: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   count: 3
-  column:
+  columns:
     - id_str
     - name
     - user.screen_name
 out: {type: stdout}
 ```
 
+`count` and `columns` are omittable.
+
+## License
+
+MIT
+
+## Author
+
+Yasuhiro Matsumoto (a.k.a mattn)
