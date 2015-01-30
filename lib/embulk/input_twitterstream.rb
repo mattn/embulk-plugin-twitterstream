@@ -65,7 +65,7 @@ module Embulk
         }
       else
         columns = config.param('columns', :array).map.with_index { |column, index|
-          Column.new(i, column, :string)
+          Column.new(index, column, :string)
         }
       end
       commit_reports = yield(task, columns, threads)
